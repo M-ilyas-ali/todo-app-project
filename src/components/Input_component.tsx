@@ -1,3 +1,4 @@
+"use client"
 import {useState} from 'react'
 
 export default function Input_Component() {
@@ -21,7 +22,7 @@ export default function Input_Component() {
   }
   const Material = (
     <main className="max-w-md flex justify-between items-center px-1">
-    <input value={input_value}onChange={(e)=>setinput_value(e.target.value)}
+    <input value={task}onChange={(e)=>settask(e.target.value)}
       type="text"
       name="task"
       placeholder=" Enter Task "
